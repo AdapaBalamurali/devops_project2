@@ -5,6 +5,7 @@ aws ec2 run-instances \
     --subnet-id subnet-08fc749671b2d077c \
     --security-group-ids sg-0b0384b66d7d692f9 \
     --associate-public-ip-address \
-    --key-name MyKeyPair
+    --key-name MyKeyPair \
+    --user-data file://my_script.txt
 
  <powershell>
